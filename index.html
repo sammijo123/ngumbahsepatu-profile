@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="7v2-Suik2MMOS6LagNpn2rZ_Q9giRSr_d8F0bPUIdFE" />
+    <title>Ngumbah Sepatu - Premium Shoe Care & Treatment</title>
+    <meta name="description" content="NGUMBAH SEPATU Grogol Solo. Layanan cuci sepatu profesional, unyellowing sol menguning, repaint warna, dan lem ulang sepatu kuat bergaransi. Cek harga & layanan kami di sini.">
+    <meta name="keywords" content="cuci sepatu solo, cuci sepatu grogol, unyellowing sepatu solo, repaint sepatu, lem sepatu solo, ngumbah sepatu, deep cleaning sepatu">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        },
+                        dark: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #22c55e;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-brand-500/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-shoe-prints -rotate-45"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider uppercase bg-gradient-to-r from-white via-slate-200 to-brand-400 bg-clip-text text-transparent">NGUMBAH<span class="text-brand-500">.SEPATU</span></span>
+                    <span class="block text-[10px] text-slate-400 font-medium tracking-widest uppercase">Premium Shoe Care</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#layanan" class="hover:text-brand-400 transition-colors">Layanan</a>
+                <a href="#kalkulator" class="hover:text-brand-400 transition-colors">Estimasi Biaya</a>
+                <a href="#galeri" class="hover:text-brand-400 transition-colors">Before / After</a>
+                <a href="#droppoint" class="hover:text-brand-400 transition-colors">Drop Point</a>
+                <a href="#kontak" class="hover:text-brand-400 transition-colors">Kontak</a>
+            </div>
+
+            <!-- CTA Header Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://wa.me/6285117710237?text=Halo%20Ngumbah%20Sepatu,%20saya%20mau%20konsultasi%20cuci%20sepatu." target="_blank" class="px-5 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-slate-950 font-semibold text-sm shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40 transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Booking Cepat</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-6 space-y-4">
+            <a href="#layanan" class="block text-slate-300 hover:text-brand-400 font-medium">Layanan</a>
+            <a href="#kalkulator" class="block text-slate-300 hover:text-brand-400 font-medium">Estimasi Biaya</a>
+            <a href="#galeri" class="block text-slate-300 hover:text-brand-400 font-medium">Before / After</a>
+            <a href="#droppoint" class="block text-slate-300 hover:text-brand-400 font-medium">Drop Point</a>
+            <a href="#kontak" class="block text-slate-300 hover:text-brand-400 font-medium">Kontak</a>
+            <div class="pt-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Ngumbah%20Sepatu,%20saya%20mau%20konsultasi%20cuci%20sepatu." target="_blank" class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-center flex items-center justify-center gap-2 shadow-lg shadow-brand-500/20">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Booking via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-pattern overflow-hidden border-b border-slate-900">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/90 to-slate-950 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                        <span>Official Shoe Care & Treatment Specialist</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+                        Bikin Sepatu KESAYANGAN <span class="bg-gradient-to-r from-brand-400 to-emerald-300 bg-clip-text text-transparent">Klimis & Fresh</span> Lagi!
+                    </h1>
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Layanan cuci sepatu profesional dengan metode premium, aman untuk semua bahan (Leather, Suede, Canvas, Mesh). Dari Deep Cleaning hingga Repainting, kami kembalikan kilau original sepatu Anda.
+                    </p>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#kalkulator" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-center shadow-xl shadow-brand-500/20 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-3">
+                            <span>Cek Estimasi & Booking</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#droppoint" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-center hover:border-slate-600 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-store text-brand-400"></i>
+                            <span>Info Drop Point (Alfamidi Gentan)</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Metrics -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white">5,000+</div>
+                            <div class="text-xs text-slate-400 font-medium">Sepatu Terawat</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white">100%</div>
+                            <div class="text-xs text-slate-400 font-medium">Aman & Berkualitas</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white">4.9★</div>
+                            <div class="text-xs text-slate-400 font-medium">Rating Pelanggan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic / Featured Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-500 to-emerald-400 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+                        <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl overflow-hidden">
+                            <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-3 h-3 rounded-full bg-rose-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                                </div>
+                                <span class="text-xs font-mono text-slate-400">STATUS: OPEN / SIAP TERIMA</span>
+                            </div>
+
+                            <div class="py-6 space-y-4">
+                                <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-800 border border-slate-700/50 group">
+                                    <img src="https://placehold.co/600x450/0f172a/22c55e?text=Deep+Cleaning+Result" alt="Sneakers Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                    <div class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-700/50 text-xs font-semibold text-brand-400 flex items-center gap-2">
+                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                        <span>Deep Cleaning + Unyellowing</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold">
+                                            <i class="fa-solid fa-motorcycle text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-sm font-bold text-white">Layanan Drop & Pick Up</h4>
+                                            <p class="text-xs text-slate-400">Tersedia via Drop Point Alfamidi Gentan</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-md bg-brand-500/10 text-brand-400 text-xs font-bold">EASY</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-2 text-center">
+                                <p class="text-xs text-slate-400">⚡ Pengerjaan kilat 2-3 hari beres dengan garansi hasil bersih maksimal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-24 bg-slate-900/50 relative border-b border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20">Daftar Layanan & Harga</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Solusi Terbaik Untuk Setiap Masalah Sepatu</h2>
+                <p class="text-slate-400 text-base">Harga transparan dan terjangkau dengan kualitas pengerjaan menggunakan bahan pembersih premium berstandar internasional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-500/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-brand-500/10">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-soap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Deep Cleaning</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Pembersihan menyeluruh pada seluruh bagian sepatu (upper, midsole, outsole, dan tali) menggunakan cairan khusus aman bahan.</p>
+                        <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Cocok untuk Kanvas, Mesh, Leather</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Bebas noda membandel</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Free deodorizer / wangi segar</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Mulai dari</span>
+                            <span class="text-lg font-bold text-brand-400">Rp 35.000</span>
+                        </div>
+                        <a href="#kalkulator" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-brand-500 hover:text-slate-950 text-slate-200 text-xs font-semibold transition-all">Pilih</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-500/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-brand-500/10">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Unyellowing</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Perawatan khusus untuk mengembalikan warna midsole sepatu yang menguning karena oksidasi agar kembali putih bersih.</p>
+                        <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Treatment kimia khusus anti oksidasi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Midsole putih kembali kinclong</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Aman tanpa merusak karet</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Mulai dari</span>
+                            <span class="text-lg font-bold text-brand-400">Rp 50.000</span>
+                        </div>
+                        <a href="#kalkulator" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-brand-500 hover:text-slate-950 text-slate-200 text-xs font-semibold transition-all">Pilih</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-500/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-brand-500/10">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-hammer"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Reglue (Lem Sepatu)</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Perbaikan sol sepatu yang jebol atau terkelupas menggunakan lem khusus sepatu berdaya rekat tinggi dan tahan lama.</p>
+                        <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Lem elastis berkualitas tinggi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Free cleaning ringan area lem</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Garansi daya rekat</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Mulai dari</span>
+                            <span class="text-lg font-bold text-brand-400">Rp 40.000</span>
+                        </div>
+                        <a href="#kalkulator" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-brand-500 hover:text-slate-950 text-slate-200 text-xs font-semibold transition-all">Pilih</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-500/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-brand-500/10">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Repainting & Touch Up</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Pewarnaan ulang sepatu yang pudar, kusam, atau lecet agar tampak seperti baru beli dari store.</p>
+                        <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Cat khusus kulit/suede anti luntur</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Pencocokan warna akurat</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Hasil rapi dan natural</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Mulai dari</span>
+                            <span class="text-lg font-bold text-brand-400">Rp 90.000</span>
+                        </div>
+                        <a href="#kalkulator" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-brand-500 hover:text-slate-950 text-slate-200 text-xs font-semibold transition-all">Pilih</a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-500/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-brand-500/10">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Deodorizer & Anti-Bacterial</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Penyemprotan anti bakteri pembunuh kuman penyebab bau apek sekaligus pewangi tahan lama pada bagian dalam sepatu.</p>
+                        <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Menetralisir bau tidak sedap</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Membunuh bakteri & jamur</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Aroma segar tahan berhari-hari</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Mulai dari</span>
+                            <span class="text-lg font-bold text-brand-400">Rp 20.000</span>
+                        </div>
+                        <a href="#kalkulator" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-brand-500 hover:text-slate-950 text-slate-200 text-xs font-semibold transition-all">Pilih</a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-500/50 transition-all duration-300 flex flex-col justify-between group shadow-lg hover:shadow-brand-500/10">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Fast Cleaning (Express)</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Pembersihan kilat bagian upper dan midsole luar saja. Selesai dalam beberapa jam, sangat cocok untuk kebutuhan mendadak.</p>
+                        <ul class="space-y-2 mb-6 text-xs text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Pengerjaan kilat 1-3 jam</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Bersih instan untuk dipakai hangout</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-400"></i> Harga lebih ekonomis</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Mulai dari</span>
+                            <span class="text-lg font-bold text-brand-400">Rp 25.000</span>
+                        </div>
+                        <a href="#kalkulator" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-brand-500 hover:text-slate-950 text-slate-200 text-xs font-semibold transition-all">Pilih</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Calculator & WhatsApp Booking Section -->
+    <section id="kalkulator" class="py-24 relative bg-slate-950 border-b border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 space-y-4">
+                <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20">Kalkulator Estimasi</span>
+                <h2 class="text-3xl font-extrabold text-white">Hitung Biaya & Booking Langsung</h2>
+                <p class="text-slate-400 text-sm">Pilih jenis layanan dan metode drop untuk menghitung total biaya perawatan sepatu Anda.</p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Service Select -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Pilih Layanan Utama</label>
+                        <select id="calc-service" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                            <option value="35000" data-name="Deep Cleaning">Deep Cleaning (Rp 35.000)</option>
+                            <option value="50000" data-name="Unyellowing">Unyellowing (Rp 50.000)</option>
+                            <option value="40000" data-name="Reglue">Reglue / Lem Sepatu (Rp 40.000)</option>
+                            <option value="90000" data-name="Repainting">Repainting & Touch Up (Rp 90.000)</option>
+                            <option value="20000" data-name="Deodorizer">Deodorizer & Anti-Bacterial (Rp 20.000)</option>
+                            <option value="25000" data-name="Fast Cleaning">Fast Cleaning Express (Rp 25.000)</option>
+                        </select>
+                    </div>
+
+                    <!-- Addon Select -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Tambahan / Add-on (Opsional)</label>
+                        <select id="calc-addon" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                            <option value="0" data-name="Tanpa Tambahan">Tanpa Tambahan (Rp 0)</option>
+                            <option value="15000" data-name="Extra Parfum & Anti Bakteri">Extra Parfum & Anti Bakteri (+Rp 15.000)</option>
+                            <option value="25000" data-name="Express 1 Hari Jadi">Express 1 Hari Jadi (+Rp 25.000)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Customer Name -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Nama Anda</label>
+                        <input type="text" id="calc-name" placeholder="Contoh: Budi Santoso" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                    </div>
+
+                    <!-- Drop Method -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Metode Penyerahan</label>
+                        <select id="calc-method" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                            <option value="Drop Point Alfamidi Gentan">Drop Point (Alfamidi Gentan)</option>
+                            <option value="Antar Jemput Kurir (Area Terdekat)">Antar Jemput Kurir (Area Terdekat)</option>
+                            <option value="Datang Langsung ke Workshop">Datang Langsung ke Workshop</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Summary Box -->
+                <div class="bg-slate-950/80 border border-slate-800/80 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs text-slate-400 uppercase tracking-wider block">Estimasi Total Biaya</span>
+                        <div class="text-3xl font-black text-brand-400 mt-1" id="total-price">Rp 35.000</div>
+                    </div>
+                    <button onclick="sendToWhatsApp()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold shadow-xl shadow-brand-500/20 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Kirim Pesanan ke WhatsApp</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Gallery Section -->
+    <section id="galeri" class="py-24 bg-slate-900/50 relative border-b border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20">Galeri Hasil Kerja</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Before & After Treatment</h2>
+                <p class="text-slate-400 text-base">Bukti nyata transformasi sepatu kotor, menguning, dan kusam kembali bersih sempurna di tangan expert kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Gallery Item 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="relative aspect-[4/3] bg-slate-800">
+                        <img src="https://placehold.co/600x450/1e293b/cbd5e1?text=Before:+Kotor+%26+Kusam" alt="Before After 1" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-rose-500/90 text-white px-2.5 py-1 rounded-md text-xs font-bold tracking-wide uppercase">Before</div>
+                    </div>
+                    <div class="relative aspect-[4/3] bg-slate-800 border-t border-slate-800">
+                        <img src="https://placehold.co/600x450/0f172a/22c55e?text=After:+Deep+Cleaning+Bersih" alt="Before After 1 After" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-brand-500 text-slate-950 px-2.5 py-1 rounded-md text-xs font-black tracking-wide uppercase">After</div>
+                    </div>
+                    <div class="p-4 bg-slate-900">
+                        <h4 class="font-bold text-white text-sm">White Sneakers Deep Cleaning</h4>
+                        <p class="text-xs text-slate-400 mt-1">Noda membandel & lumpur hilang total, sol kembali putih.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="relative aspect-[4/3] bg-slate-800">
+                        <img src="https://placehold.co/600x450/1e293b/cbd5e1?text=Before:+Midsole+Kuning" alt="Before After 2" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-rose-500/90 text-white px-2.5 py-1 rounded-md text-xs font-bold tracking-wide uppercase">Before</div>
+                    </div>
+                    <div class="relative aspect-[4/3] bg-slate-800 border-t border-slate-800">
+                        <img src="https://placehold.co/600x450/0f172a/22c55e?text=After:+Unyellowing+Kinclong" alt="Before After 2 After" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-brand-500 text-slate-950 px-2.5 py-1 rounded-md text-xs font-black tracking-wide uppercase">After</div>
+                    </div>
+                    <div class="p-4 bg-slate-900">
+                        <h4 class="font-bold text-white text-sm">Jordan 1 Unyellowing Treatment</h4>
+                        <p class="text-xs text-slate-400 mt-1">Midsole menguning karena oksidasi kembali kinclong.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="relative aspect-[4/3] bg-slate-800">
+                        <img src="https://placehold.co/600x450/1e293b/cbd5e1?text=Before:+Suede+Pudar" alt="Before After 3" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-rose-500/90 text-white px-2.5 py-1 rounded-md text-xs font-bold tracking-wide uppercase">Before</div>
+                    </div>
+                    <div class="relative aspect-[4/3] bg-slate-800 border-t border-slate-800">
+                        <img src="https://placehold.co/600x450/0f172a/22c55e?text=After:+Repaint+Suede+Baru" alt="Before After 3 After" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-brand-500 text-slate-950 px-2.5 py-1 rounded-md text-xs font-black tracking-wide uppercase">After</div>
+                    </div>
+                    <div class="p-4 bg-slate-900">
+                        <h4 class="font-bold text-white text-sm">Suede Repainting & Cleaning</h4>
+                        <p class="text-xs text-slate-400 mt-1">Warna pudar dikembalikan cerah pekat dengan tekstur halus.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Drop Point & Location Section -->
+    <section id="droppoint" class="py-24 bg-slate-950 relative border-b border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-400 font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20">Lokasi & Drop Point</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Drop Point Terdekat Anda</h2>
+                <p class="text-slate-400 text-base">Titipkan sepatu Anda dengan mudah dan aman di partner resmi drop point kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                
+                <!-- Drop Point Card -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-brand-400 uppercase tracking-widest">Featured Drop Point</span>
+                            <h3 class="text-2xl font-black text-white mt-1">Alfamidi Gentan</h3>
+                            <p class="text-sm text-slate-400 mt-1">Lokasi strategis, aman, dan mudah diakses untuk penitipan serta pengambilan sepatu Anda.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 border-t border-slate-800 pt-6 text-sm text-slate-300">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-400 w-5"></i>
+                            <span>Jl. Raya Gentan No. 45 (Area Parkir / Kasir Partner)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clock text-brand-400 w-5"></i>
+                            <span>Jam Operasional: Setiap Hari (08.00 - 21.00 WIB)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-shield-halved text-brand-400 w-5"></i>
+                            <span>Penitipan dijamin aman dengan nomor resi resmi</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://maps.google.com/?q=Alfamidi+Gentan" target="_blank" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-center text-sm border border-slate-700 flex items-center justify-center gap-2 transition-all">
+                            <i class="fa-solid fa-map-location-dot text-brand-400"></i>
+                            <span>Buka di Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- How It Works Drop Point -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6">
+                    <h3 class="text-xl font-bold text-white">Cara Titip di Drop Point:</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-brand-500 text-slate-950 font-bold flex items-center justify-center text-sm shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Booking via WhatsApp</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Konfirmasikan jenis sepatu & layanan yang dipilih ke admin kami sebelum drop.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-brand-500 text-slate-950 font-bold flex items-center justify-center text-sm shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Bungkus & Serahkan ke Kasir</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Masukkan sepatu ke dalam tas/plastik, lalu titipkan ke kasir Alfamidi Gentan dengan menyebutkan nama & kode booking.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-brand-500 text-slate-950 font-bold flex items-center justify-center text-sm shrink-0">3</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Konfirmasi & Selesai</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Admin kami akan mengambil sepatu ke drop point, dan mengabari Anda jika sudah selesai & siap diambil kembali.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="kontak" class="bg-slate-950 pt-20 pb-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-slate-900">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center text-slate-950 font-black text-lg">
+                            <i class="fa-solid fa-shoe-prints -rotate-45"></i>
+                        </div>
+                        <span class="text-lg font-black tracking-wider uppercase text-white">NGUMBAH<span class="text-brand-500">.SEPATU</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Spesialis perawatan sepatu profesional, deep cleaning, unyellowing, reglue, dan repainting dengan hasil maksimal dan harga bersahabat.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-brand-500 hover:text-slate-950 text-slate-300 border border-slate-800 flex items-center justify-center transition-all"><i class="fa-brands fa-instagram text-lg"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-brand-500 hover:text-slate-950 text-slate-300 border border-slate-800 flex items-center justify-center transition-all"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-brand-500 hover:text-slate-950 text-slate-300 border border-slate-800 flex items-center justify-center transition-all"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Menu Utama</h4>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><a href="#layanan" class="hover:text-brand-400 transition-colors">Daftar Layanan</a></li>
+                        <li><a href="#kalkulator" class="hover:text-brand-400 transition-colors">Kalkulator Estimasi</a></li>
+                        <li><a href="#galeri" class="hover:text-brand-400 transition-colors">Galeri Before / After</a></li>
+                        <li><a href="#droppoint" class="hover:text-brand-400 transition-colors">Info Drop Point</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services List -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Layanan Unggulan</h4>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><span class="hover:text-brand-400 transition-colors cursor-pointer">Deep Cleaning</span></li>
+                        <li><span class="hover:text-brand-400 transition-colors cursor-pointer">Unyellowing Midsole</span></li>
+                        <li><span class="hover:text-brand-400 transition-colors cursor-pointer">Reglue (Lem Sepatu)</span></li>
+                        <li><span class="hover:text-brand-400 transition-colors cursor-pointer">Repainting & Touch Up</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-sm tracking-wider uppercase">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-400 mt-1"></i>
+                            <span>Workshop Utama: Jl. Slamet Riyadi & Drop Point Alfamidi Gentan</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-brand-400"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-400"></i>
+                            <span>halo@ngumbahsepatu.id</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Ngumbah Sepatu. All rights reserved. Professional Shoe Care.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-slate-400 transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-slate-400 transition-colors">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-slate-950/95', 'shadow-lg', 'shadow-slate-950/50');
+            } else {
+                navbar.classList.remove('bg-slate-950/95', 'shadow-lg', 'shadow-slate-950/50');
+            }
+        });
+
+        // Calculator Logic
+        const calcService = document.getElementById('calc-service');
+        const calcAddon = document.getElementById('calc-addon');
+        const totalPriceEl = document.getElementById('total-price');
+
+        function updateCalculator() {
+            const servicePrice = parseInt(calcService.value) || 0;
+            const addonPrice = parseInt(calcAddon.value) || 0;
+            const total = servicePrice + addonPrice;
+
+            totalPriceEl.textContent = 'Rp ' + total.toLocaleString('id-ID');
+        }
+
+        calcService.addEventListener('change', updateCalculator);
+        calcAddon.addEventListener('change', updateCalculator);
+
+        // WhatsApp Sender Function
+        function sendToWhatsApp() {
+            const serviceSelect = calcService.options[calcService.selectedIndex];
+            const serviceName = serviceSelect.getAttribute('data-name');
+            const servicePrice = serviceSelect.value;
+
+            const addonSelect = calcAddon.options[calcAddon.selectedIndex];
+            const addonName = addonSelect.getAttribute('data-name');
+            const addonPrice = parseInt(addonSelect.value) || 0;
+
+            const customerName = document.getElementById('calc-name').value.trim() || 'Pelanggan';
+            const dropMethod = document.getElementById('calc-method').value;
+
+            const total = parseInt(servicePrice) + addonPrice;
+
+            const message = `Halo Kak, saya mau booking perawatan sepatu di Ngumbah Sepatu:%0n` +
+                            `----------------------------------%0n` +
+                            `*Nama:* ${customerName}%0n` +
+                            `*Layanan:* ${serviceName} (Rp ${parseInt(servicePrice).toLocaleString('id-ID')})%0n` +
+                            `*Tambahan:* ${addonName}%0n` +
+                            `*Metode Penyerahan:* ${dropMethod}%0n` +
+                            `*Total Estimasi:* Rp ${total.toLocaleString('id-ID')}%0n` +
+                            `----------------------------------%0n` +
+                            `Mohon info selanjutnya ya kak. Terima kasih!`;
+
+            const waUrl = `https://wa.me/6281234567890?text=${message}`;
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
